@@ -10,6 +10,6 @@ def num_words(file_contents):
     return words
 
 def main():
-    print(f"Found {num_words(get_book_text('books/frankenstein.txt'))} total words")
+    print(f"Found {num_words(get_book_text('books/frankenstein.txt'))} total words <commit>")
 
 main()
