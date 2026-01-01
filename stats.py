@@ -13,3 +13,17 @@ def get_num_char(file_contents):
         else:
             char_counts[i] += 1
     return char_counts
+
+def sort_on(char_counts):
+    return char_counts["num"]
+
+def sorted_list(char_counts):   
+    charlist = []
+
+    for i in char_counts:
+        entry = {"char": i, "num": char_counts[i]}
+        charlist.append(entry)
+
+    charlist.sort(reverse=True, key=sort_on)
+
+    return charlist
